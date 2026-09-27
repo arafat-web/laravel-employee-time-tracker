@@ -90,7 +90,9 @@ export default function MyTime({ shift, attendance, history, allowedBreakMinutes
     ];
 
     return (
-        <Layout title="My Time" sub={shift ? `${shift.name} · ${shift.start_time?.slice(0, 5)} – ${shift.end_time?.slice(0, 5)}` : 'No shift assigned'}>            <PageTitle title="My Time" />            {/* Hero */}
+        <Layout title="My Time" sub={shift ? `${shift.name} · ${shift.start_time?.slice(0, 5)}–${shift.end_time?.slice(0, 5)}` : 'No shift assigned'}>
+            <PageTitle title="My Time" />
+            {/* Hero */}
             <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
                 <div className="flex flex-col items-center gap-6 px-6 py-8 md:flex-row md:justify-between md:px-10">
                     <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">

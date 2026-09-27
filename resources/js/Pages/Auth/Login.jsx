@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, usePage } from '@inertiajs/react';
 import { Clock } from 'lucide-react';
 import { Card, Btn, Field, inputCls } from '../../Components/ui';
+import PageTitle from '../../Components/PageTitle';
 
 export default function Login() {
     const { errors } = usePage().props;
