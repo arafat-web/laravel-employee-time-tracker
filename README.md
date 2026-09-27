@@ -2,7 +2,7 @@
 
 Free open-source employee time tracker — attendance, shifts, clock in/out, leaves with approval, salary, performance, timesheet + payroll CSV. Built with Laravel, React, Inertia, Tailwind.
 
-Built with Laravel + Inertia + React + Tailwind. No paid packages. MIT licensed.
+No paid packages. MIT licensed.
 
 ## What it does
 
