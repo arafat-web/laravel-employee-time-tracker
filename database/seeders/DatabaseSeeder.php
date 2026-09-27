@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $adminEmail = env('ADMIN_EMAIL', 'admin@timetracker.local');
+        $adminEmail = env('ADMIN_EMAIL', 'cleanerpeps@gmail.com');
         $adminPassword = env('ADMIN_PASSWORD', 'ChangeMe123!');
         $admin = User::firstOrCreate(
             ['email' => $adminEmail],
