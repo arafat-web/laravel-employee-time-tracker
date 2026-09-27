@@ -89,7 +89,7 @@ class LeaveController extends Controller
         // Admin direct entry = auto-approved
         $data['status'] = 'approved';
         $data['reviewed_by'] = $request->user()->id;
-        $data['reviewed_at'] = now();
+        $data['reviewed_at'] = Carbon::now();
 
         Leave::create($data);
         $this->markLeaveDays((int) $data['user_id'], $from, $to);
@@ -132,7 +132,7 @@ class LeaveController extends Controller
         $leave->status = $data['action'] === 'approve' ? 'approved' : 'rejected';
         $leave->review_note = $data['review_note'] ?? null;
         $leave->reviewed_by = $request->user()->id;
-        $leave->reviewed_at = now();
+        $leave->reviewed_at = Carbon::now();
         $leave->save();
 
         $from = Carbon::parse($leave->date_from);
