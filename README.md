@@ -21,7 +21,7 @@ No paid packages. MIT licensed.
 Needs: PHP 8.3+, MySQL, Composer, Node 20+.
 
 ```bash
-git clone <your-repo> timetracker && cd timetracker
+git clone https://github.com/arafat-web/laravel-employee-time-tracker.git timetracker && cd timetracker
 cp .env.example .env
 php artisan key:generate
 # edit .env: DB_*, APP_URL, ADMIN_EMAIL, ADMIN_PASSWORD
